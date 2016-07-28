@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+body{
+	font-family: 'Noto Sans KR', sans-serif;
+	background-color: #dddfe2;
+	margin-top: 46px;
+}
+
+.hanjiboong-container {
+	width: 750px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #acadae;
+}
+
+.top-menu-bg {
+	background-color: #f47564;
+}
+
+.navbar {
+	margin-bottom: 0;
+	background-color: #f47564;
+	height: 46px;
+	min-height: 46px;
+}
+
+@media (max-width: 750px) {
+	.hanjiboong-container {
+		width: 100%;
+	}
+}
+
+.top-menu .hanjiboong-container > .row  { text-align: center; }
+.top-menu .hanjiboong-container > .row .col-xs-2 { padding-left: 0; padding-right: 0; margin-left: auto; margin-right: auto; }
+.top-menu .hanjiboong-container > .row .col-xs-2:hover, .top-menu-active { background-color: #e25f56; }
+
+.log {
+	position: absolute;
+	top: 100px;
+	left: 20px;
+}
+
+.contents-box { 
+	display: none; 
+}
+
+#timeline {
+	display: block;
+}
+
+.textarea-control {
+	width: 100%;
+}
