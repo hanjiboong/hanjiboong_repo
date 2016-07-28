@@ -1,0 +1,157 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+*{margin:0; }
+body{
+	font-family: 'Noto Sans KR', sans-serif;
+	background-color: #dddfe2;
+	margin-top: 46px;
+}
+#profile_container{
+	width:100%;
+	height:1000px;
+	background-color: #acadae;
+}
+#profile_contents{
+	width:750px;
+	margin:0 auto;
+	background-color:#e9ebee;
+	height:1000px;
+}
+#prf_img_box{
+	position: relative;
+	width:100%;
+	height:300px;
+	background-color: #ccc;
+	overflow: hidden;
+	z-index:1;
+}
+#prf_img_box img{
+	width:100%;
+	opacity: 0.3;
+}
+@media(max-width: 500px){
+        #prf_img_box img {
+            height: 300px;
+        }
+    }
+
+.prf_center_text{
+	position: absolute;
+	top:130px;
+	left:40%;
+	color:#fff;
+	text-align: center;
+}
+.prf_center_text a{
+	color:#333;
+}
+.prf_center_text a:hover{
+	color:#fff;
+	text-decoration: none;
+}
+.circle_img{
+	width:100%;
+	height:80px;
+	position: relative;
+}
+
+
+.circle_img_box{
+	position: absolute;
+	left:30px;
+	top:-80px;
+	width:150px;
+	height:150px;
+	border-radius : 50%;
+	border:4px solid #fff;
+	background-color: #666;
+	z-index:3;
+}
+.circle_img_box p{
+	width:130px;
+	margin:0 auto;
+	margin-top:100px;
+	padding-top:10px;
+	border-top:1px solid #fff;
+	text-align: center;
+	color:#fff;
+}
+.circle_img_box a{
+	color: #ccc
+}
+.circle_img_box a:hover{
+	text-decoration: none;
+	color: #fff
+}
+
+.prf_box{
+	height:60px;
+	padding:14px;
+	margin-top:30px;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	background-color: #fff;
+	font-size:1.5em;
+	font-weight: bold;
+}
+.prf_title{
+	height:5px;
+	padding:0 70px;
+	margin-top:20px;
+	font-size:1.0em;
+	font-weight: bold;
+	color:#999;
+}
+.prf_title .title_left{
+	float: left;
+}
+.prf_title .title_right{
+	float: right;
+}
+.prf_box .box_left_text{
+	float: left;
+	padding-left:50px;
+	color:#666;
+}
+.prf_box .box_right_text{
+	float: right;
+	padding-right:60px;
+	color:#29c0b9;
+}
+.prf_box .box_right_text .form-control{
+	margin-top:-8px;
+	padding:0 25px;
+	font-size:0.8em;
+}
+.button_pwd{
+	width:600px;
+	margin:30px auto 0;
+	border:1px solid #ccc;
+	background-color: #f47564;
+}
+
+.button_pwd:hover{
+	background-color: #e25f45;
+	cursor: pointer;
+}
+
+
+.button_pwd p{
+	padding:10px 0;
+	color:#fff;
+	font-size:1.3em;
+	font-weight: bold;
+	text-align: center;
+}
+
+.button_pwd a, .button_pwd a:hover{
+	color: #fff;
+	text-decoration: none;	
+}
+
+
+@media(max-width: 749px){
+        #profile_contents {
+            width: 100%;
+        }
+    }
