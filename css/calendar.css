@@ -19,7 +19,8 @@
 .move i {
 	padding: 0 1rem;
 }
-.move i:hover{
+.move i:hover,
+.move i:focus {
 	background-color: #8560a9;
 	color: white;
 	border-radius: 50%;

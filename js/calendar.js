@@ -67,11 +67,11 @@ function hanjiboongCalendar(id, changedDate = "today" ) {
 
 	tempTag 
 		= "<div class=\"row\">\n"
-		+ "<div class=\"col-xs-4 move\"><i class=\"fa fa-angle-left\""
+		+ "<div class=\"col-xs-3 move\"><i class=\"fa fa-angle-left\""
 		+ " onclick=\"javascript:hanjiboongCalendar('" + id + "', '" + prevDate + "');\"></i></div>\n"
-		+ "<div class=\"col-xs-4 date\">"
+		+ "<div class=\"col-xs-6 date\">"
 		+ "<span class=\"year\">" + curYear + "년</span>&nbsp;&nbsp;<span class=\"month\">" + curMonth + "월</span></div>\n"
-		+ "<div class=\"col-xs-4 move\"><i class=\"fa fa-angle-right\""
+		+ "<div class=\"col-xs-3 move\"><i class=\"fa fa-angle-right\""
 		+ " onclick=\"javascript:hanjiboongCalendar('" + id + "', '" + nextDate + "');\"></i></div>\n"
 		+ "</div>\n"
 		;
