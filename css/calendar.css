@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+#hanjoboong-calendar-box .row { margin: 2.4rem; }
+
+.move, 
+.date, 
+.table-borderless * {
+	text-align: center;
+} 
+
+.table-borderless th { color: #8560a9; }
+
+.date * { color: #f47564; }
+.date .month, 
+.move i{
+	font-size: 3rem;
+}
+
+.move i {
+	padding: 0 1rem;
+}
+.move i:hover{
+	background-color: #8560a9;
+	color: white;
+	border-radius: 50%;
+}
+
+
+.table-borderless tbody td {
+	text-align: center;
+}
+
+.detail-date {
+	width: 2.4rem;
+	height: 2.4rem;
+	margin: 1.2rem auto;
+	text-align: center;
+}
+
+.today {
+	background-color: #8560a9;
+	color: white;
+	border-radius: 50%;
+}
+
+.datebox{
+	width: 100%;
+	height: 80px;
+	background-color: #8560a9;
+	text-align: center;
+	color: #ffffff;
+	font-size: 16px;
+	padding-top: 1%;
+}
+
+.num{
+	font-size: 30px;
+}
+.photo{
+	padding-top: 4%;
+}
