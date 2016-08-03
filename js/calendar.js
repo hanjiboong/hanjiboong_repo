@@ -2,10 +2,6 @@ $(document).ready(function() {
 	hanjiboongCalendar("hanjoboong-calendar-box");
 });
 
-
-
-
-
 function hanjiboongCalendar(id, changedDate = "today" ) { 
 	var date;
 
@@ -107,24 +103,26 @@ function hanjiboongCalendar(id, changedDate = "today" ) {
 			// 첫번째 주 에서 1일 이전의 칸들은 공란
 			if(i==0 && j<firstDay) {
 				// tempStr += " -- |";
-				tempTag += "<td><div class=\"detail-date\"></div></td>";
+				tempTag += "<td><div class=\"detail-date-box\"></div></td>";
 			}
 			else if(dateIndex <= lastDate) {
 				// 오늘 일때
 				// if(isToday && dateIndex == curDate) {
 				if(isToday && dateIndex == realCurDate) {  // 오늘이면 실제 오늘로 변경.. curDate 쓰면.. 날짜 변경시 1일로 설정됨.
-					tempTag += "<td><div class=\"detail-date today\">" + dateIndex + "</div></td>";
+					tempTag += "<td><div class=\"detail-date-box today\"><div class=\"detail-date\">"
+							+ dateIndex + "</div></div></td>";
 				}
 				// 오늘 아니면
 				else {
-					tempTag += "<td><div class=\"detail-date\">" + dateIndex + "</div></td>";
+					tempTag += "<td><div class=\"detail-date-box\"><div class=\"detail-date\">" 
+								+ dateIndex + "</div></div></td>";
 				}
 				
 				dateIndex++;
 			}
 			// 나머지도 공란
 			else {
-				tempTag += "<td><div class=\"detail-date\"></div></td>";
+				tempTag += "<td><div class=\"detail-date-box\"></div></td>";
 			}
 		}
 		tempTag += "</tr>\n";

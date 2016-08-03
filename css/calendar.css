@@ -31,11 +31,16 @@
 	text-align: center;
 }
 
-.detail-date {
-	width: 2.4rem;
-	height: 2.4rem;
+.detail-date-box {
+	width: 3.6rem;
+	height: 3.6rem;
 	margin: 1.2rem auto;
 	text-align: center;
+	display: table;
+}
+.detail-date {
+	display: table-cell;
+	vertical-align: middle;
 }
 
 .today {
