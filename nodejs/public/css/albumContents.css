@@ -1,0 +1,299 @@
+@charset "utf-8";
+#albumContentsWrap {
+    width: 750px;
+    margin: 46px auto 0;
+    background-color: #e9ebee;
+}
+
+#bar {
+	top: 0;
+	width: 750px;
+    height: 46px;
+    background-color: #f47564;
+    position: fixed;
+    z-index: 999;
+}
+#albumSubNav{
+	top:46px;
+	width: 750px;
+	height: 46px;
+	border-bottom: solid 1px #eee;
+	background-color: #fff;
+	position: fixed;
+	z-index: 998;
+	display: none;
+}
+.albumSubNavWarp{
+	width: 100%;
+	height: 46px;
+	position: relative;
+}
+.backBtnNav{
+	height: 46px;
+    position: absolute;
+    left: 14px;
+   	display: table;
+}
+
+.backBtnNav a {
+    text-decoration: none;
+    color: #e25f56;
+    font-size: 17px;
+    display: table-cell;
+	vertical-align: middle;
+}
+
+.pluseBtnNav{
+	height: 46px;
+	position: absolute;
+	display: table;
+	right: 14px;
+}
+
+.pluseBtnNav a {
+	text-decoration: none;
+	color: #e25f56;
+	font-size: 20px;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#albumTop {
+    width: 100%;
+    position: relative;
+}
+
+.albumContentsImgBox {
+    height: 280px;
+    background: url("../imgs/albumimg001.jpg") fixed;
+    z-index: 1;
+}
+
+.albumImgCover {
+    height: 280px;
+    background-color: #333;
+    opacity: 0.4;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+.backBtn {
+    position: absolute;
+    top: 20px;
+    left: 14px;
+}
+
+.backBtn a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+}
+
+.pluseBtn{
+	position: absolute;
+	top: 20px;
+	right: 14px;
+}
+
+.pluseBtn a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 20px;
+}
+
+#albumContents{
+	width: 750px;
+}
+.albumContentsTxtBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    line-height: 0.9;
+}
+
+.contentsTitleTxt {
+    font-size: 32px;
+    color: #fff;
+}
+
+.hyphen {
+    color: #fff;
+    font-size: 25px;
+}
+
+.dateTxt {
+    color: #fff;
+    font-size: 12px;
+}
+
+
+/* 이미지 시작 */
+
+.contentsWrap {
+    width: 98%;
+    margin: 10px auto 0;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+.contentsImg {
+    width: 100%;
+    padding-top: 7px;
+    padding-bottom: 14px;
+    text-align: center;
+}
+
+.contentsImg img {
+    width: 98%;
+    text-align: center;
+}
+
+.contentsIcon a {
+    text-decoration: none;
+    color: #ddd;
+    font-size: 28px;
+    margin-right: 14px;
+    margin-bottom: 15px;
+}
+
+.contentsIcon {
+    margin-left: 10px;
+}
+
+.contentsComment {
+    width: 98%;
+    margin-left: 10px;
+    padding-bottom: 15px;
+    overflow: hidden;
+}
+
+.commentImgWrap {
+    width: 45px;
+    float: left;
+}
+
+.commentImg {
+    width: 45PX;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #eee;
+}
+
+.commentTxtWrap {
+    width: 85%;
+    height: 45px;
+    float: left;
+    display: table;
+}
+
+.commentTxtBlank{
+	float: left;
+	width: 10px;
+	height: 45px;
+}
+
+.commentTxt {
+    width: 500px;
+    font-size: 15px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.commentDate {
+    color: #ddd;
+    font-size: 10px;
+}
+
+/* 텍스트 더보기 */
+.otherContents {
+	position: relative;
+    width: 98%;
+    margin: 25px auto 0px;
+    padding-bottom: 10px;
+    background-color: #fff;
+}
+
+.otherContentsTitle {
+    margin-left: 10px;
+    margin-top: 10px;
+    padding-top: 10px;
+    font-size: 16px;
+    color: #999;
+}
+
+.otherContentsImg {
+    width: 98%;
+    height: 200px;
+    margin: 7px auto 0;
+    text-align: center;
+    background: url("../imgs/albumimg002.png") 80% center;
+    background-size: 100%;
+}
+
+.imgCover {
+    height: 200px;
+    background-color: #333;
+    opacity: 0.4;
+}
+.otherContentsTxt{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* 댓글 입력 */
+
+.commentTxtInputWrap{
+	width: 98%;
+	margin: 7px auto 0;
+	padding-bottom: 14px;
+	overflow: auto;
+	display: none;
+}
+.commentTxtInput{
+	float: left;
+	width: 90%;
+	height: 30px;
+	background-color: #f6f6f6;
+	border: 1px solid #e7e7e7;
+	border-radius: 40px;
+	-webkit-appearance:none; /*모바일 인풋 기본 스타일 삭제*/
+}
+.commentTxtBtn{
+	width: 9%;
+	float: left;
+	margin-left: 6px;
+}
+.commentSendBtn{
+	width: 65px;
+	height: 30px;
+	background-color: #29c0b9;
+	border:0;
+	border-radius: 3px;
+	color: #fff;
+	font-size: 14px;
+}
+
+.commentBox{
+	width: 90%;
+	border:1px solid transparent;
+	background-color: transparent;
+	margin: 2px 0 0 10px ;
+}
+
+input, textarea, select, a { outline: none; }
+
+@media(max-width: 760px) {
+    #albumContents,#albumContentsWrap,#albumSubNav {
+        width: 100%;
+    }
+    .commentTxtInput{
+    	width: 81%;
+    }
+}
