@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	
+	<style>
+#albumTapMenu{
+	width: 750px;
+	height: 400px;
+	overflow: auto;
+}
+.albumTapLeft{
+	width: 50%;
+	height: 50px;
+	text-align: center;
+	float: left;
+}
+.albumTapRight{
+	width: 50%;
+	height: 50px;
+	text-align: center;
+	float: right;
+}
+.albumTapLeft a{
+	font-size: 16px;
+	text-decoration: none;
+}
+.albumTapRight a{
+	font-size: 16px;
+	text-decoration: none;
+}
+.albumVarticalTable {
+	display: table;
+	overflow: hidden;
+}
+.albumVarticalCell{
+	margin: 0 auto;
+	display: table-cell;
+	vertical-align: middle;
+}
+.albumVarticalCell a{
+	/*color: #e25f56;*/
+	color: #fcc;
+}
+.tapOn {
+	cursor: pointer;
+	border-bottom: 3px solid #e25f56;
+}
+
+.tapOn > .albumVarticalCell > a{
+	color: #e25f56;;
+}
+	</style>
+
+	<script type="text/javascript" src="js/jquery-1.12.3.js"></script>
+</head>
+<body>
+
+<div id="albumTapMenu">
+    <div class="albumVarticalTable albumTapLeft tapOn">
+        <div class="albumVarticalCell ">
+            <a href="javascript:">사진첩</a>
+        </div>
+    </div>
+    <div class="albumVarticalTable albumTapRight">
+        <div class="albumVarticalCell">
+            <a href="javascript:">전체보기</a>
+        </div>
+    </div>
+</div>
+
+<script>
+
+$("#albumTapMenu .albumVarticalTable").click(function() {
+	$(this).parent().find(".albumVarticalTable").removeClass("tapOn");
+	$(this).addClass("tapOn");
+});
+</script>
+
+</body>
+</html>
