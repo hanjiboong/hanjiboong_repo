@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/nomalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/album.css">
+    <script src="js/jquery-1.12.3.js"></script>
+    <script src="js/imgLiquid-min.js"></script>
+    <style>
+    @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+    body {
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="albumWarp">
+        <div id="bar">
+        </div>
+        <!-- 탭메뉴 시작 -->
+        <div id="albumTapMenu">
+            <div class="albumVarticalTable albumTapLeft tapOn">
+                <div class="albumVarticalCell">
+                    <a href="javascript:">사진첩</a>
+                </div>
+            </div>
+            <div class="albumVarticalTable albumTapRight">
+                <div class="albumVarticalCell">
+                    <a href="javascript:">전체보기</a>
+                </div>
+            </div>
+        </div>
+        <!--탭메뉴 끝-->
+        <!--컨텐츠 시작-->
+        <div id="albumContent">
+            <!--컨텐츠 박스 시작-->
+            <div class="albumBox">
+                <div class="albumImg01">
+                    <div class="albumImgCover">
+                    </div>
+                </div>
+                <div class="albumTxt">
+                    <div class="titleTxt">
+                        가족 여름휴가
+                    </div>
+                    <div class="hyphen">
+                        ㅡ
+                    </div>
+                    <div class="dateTxt">
+                        2016년 7월 20일(화)
+                    </div>
+                </div>
+            </div>
+            <!--컨텐츠 박스 끝-->
+            <!--컨텐츠 박스 시작-->
+            <div class="albumBox">
+                <div class="albumImg02">
+                    <div class="albumImgCover">
+                    </div>
+                </div>
+                <div class="albumTxt">
+                    <div class="titleTxt">
+                        엄마아빠 사랑해요
+                    </div>
+                    <div class="hyphen">
+                        ㅡ
+                    </div>
+                    <div class="dateTxt">
+                        2016년 7월 8일(목)
+                    </div>
+                </div>
+            </div>
+            <!--컨텐츠 박스 끝-->
+            <!--컨텐츠 박스 시작-->
+            <div class="albumBox">
+                <div class="albumImg03">
+                    <div class="albumImgCover">
+                    </div>
+                </div>
+                <div class="albumTxt">
+                    <div class="titleTxt">
+                        부모님 결혼기념일
+                    </div>
+                    <div class="hyphen">
+                        ㅡ
+                    </div>
+                    <div class="dateTxt">
+                        2016년 5월 8일(수)
+                    </div>
+                </div>
+            </div>
+            <!--컨텐츠 박스 끝-->
+            <!--컨텐츠 박스 시작-->
+            <div class="albumBox">
+                <div class="albumImg04">
+                    <div class="albumImgCover">
+                    </div>
+                </div>
+                <div class="albumTxt">
+                    <div class="titleTxt">
+                        불꽃놀이 축제
+                    </div>
+                    <div class="hyphen">
+                        ㅡ
+                    </div>
+                    <div class="dateTxt">
+                        2016년 4월 13일(금)
+                    </div>
+                </div>
+            </div>
+            <!--컨텐츠 박스 끝-->
+        </div>
+        <!--전체보기 박스 시작-->
+        <div id="albumAllView" class="container-fluid">
+            <div class="albumAllViewWarp">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <div class="albumImgPanel">
+                            <img src="imgs/albumimg005.jpg">
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="albumImgPanel">
+                            <img src="imgs/albumimg006.jpg">
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="albumImgPanel">
+                            <img src="imgs/albumimg007.jpg">
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="albumImgPanel">
+                            <img src="imgs/albumimg005.jpg">
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="albumImgPanel">
+                            <img src="imgs/albumimg006.jpg">
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="albumImgPanel">
+                            <img src="imgs/albumimg007.jpg">
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="albumImgPanel">
+                            <img src="imgs/albumimg005.jpg">
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="albumImgPanel">
+                            <img src="imgs/albumimg006.jpg">
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="albumImgPanel">
+                            <img src="imgs/albumimg007.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--전체보기 박스 끝-->
+    </div>
+    <script>
+    $(".albumImgPanel").imgLiquid();
+
+    $("#albumTapMenu .albumVarticalTable").click(function() {
+        // $(this).parent().find(".albumVarticalTable").removeClass("tapOn");
+        $("#albumTapMenu .albumVarticalTable").removeClass("tapOn");
+        $(this).addClass("tapOn");
+
+        if($(this).hasClass("albumTapLeft")) {
+            $("#albumAllView").hide();
+            $("#albumContent").show();
+        }
+        else {
+            $("#albumContent").hide();
+            $("#albumAllView").show();
+        }
+    });
+    </script>
+</body>
+
+</html>

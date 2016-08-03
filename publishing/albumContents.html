@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/nomalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/albumContents.css">
+    <script src="https://use.fontawesome.com/beffbe80a6.js"></script>
+    <script type="text/javascript" src="js/jquery-1.12.3.js"></script>
+    <style>
+    @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+    body {
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="albumContentsWrap">
+        <div id="bar">
+        </div>
+        <div id="albumSubNav">
+            <div class="albumSubNavWarp">
+                <div class="backBtnNav">
+                    <a href="javascript:" class="fa fa-chevron-left">
+                        <strong>뒤로</strong>
+                    </a>
+                </div>
+                <div class="pluseBtnNav">
+                    <a href="javascript:" class="fa fa-plus"></a>
+                </div>
+            </div>
+        </div>
+        <div id="albumTop">
+            <div class="albumContentsImgBox">
+                <div class="albumImgCover">
+                </div>
+            </div>
+            <div class="backBtn">
+                <a href="javascript:" class="fa fa-chevron-left">
+                    <strong>뒤로</strong>
+                </a>
+            </div>
+            <div class="pluseBtn">
+                <a href="javascript:" class="fa fa-plus"></a>
+            </div>
+            <div class="albumContentsTxtBox">
+                <div class="contentsTitleTxt">
+                    가족 여름휴가</br>
+                    <span class="hyphen">_</span></br>
+                    <span class="dateTxt">2016년 7월 20일(화)</span>
+                </div>
+            </div>
+        </div>
+        <div id="albumContents">
+            <div class="contentsWrap">
+                <div class="contentsImg">
+                    <img src="imgs/albumContentsImg01.jpg">
+                </div>
+                <div class="contentsIcon">
+                    <a href="javascript:" class="fa fa-heart-o" id="albumHeart"> </a>
+                    <a href="javascript:" class="fa fa-comment commentBtn"></a>
+                    <a href="javascript:" class="fa fa-share"></a>
+                </div>
+                <div class="commentTxtInputWrap">
+                    <div class="commentTxtInput">
+                        <input type="text" name="commentBox" class="commentBox" />
+                    </div>
+                    <div class="commentTxtBtn">
+                        <button class="commentSendBtn">전송</button>
+                    </div>
+                </div>
+                <div class="contentsCommentWrap">
+                    
+                </div> <!-- /.contentsCommentWrap -->
+            </div>
+            <div class="contentsWrap">
+                <div class="contentsImg">
+                    <img src="imgs/albumContentsImg02.jpg">
+                </div>
+                <div class="contentsIcon">
+                    <a href="javascript:" class="fa fa-heart-o" id="albumHeart"> </a>
+                    <a href="javascript:" class="fa fa-comment commentBtn"></a>
+                    <a href="javascript:" class="fa fa-share"></a>
+                </div>
+                <div class="commentTxtInputWrap">
+                    <div class="commentTxtInput">
+                        <input type="text" name="commentBox" class="commentBox" />
+                    </div>
+                    <div class="commentTxtBtn">
+                        <button class="commentSendBtn">전송</button>
+                    </div>
+                </div>
+            </div>
+            <div class="otherContents">
+                <div class="otherContentsTitle">
+                    스토리 더보기
+                </div>
+                <div class="otherContentsImg">
+                    <div class="imgCover">
+                    </div>
+                </div>
+                <div class="otherContentsTxt">
+                    <div class="otherTitleTxt">
+                        <div class="contentsTitleTxt">
+                            <span class="dateTxt">2016년 7월 8일(목)</span></br>
+                            엄마아빠 사랑해요
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+        //스크롤시 뒤로 버튼 생성 제거
+        $(document).scroll(function() {
+            var btn = $("#albumSubNav");
+            var position = $(window).scrollTop();
+            if (position > 20) {
+                btn.fadeIn(100);
+            } else if (position < 20) {
+                btn.fadeOut(100);
+            }
+        });
+        //하트 버튼
+        $(".contentsWrap #albumHeart").click(function() {
+                $(this).toggleClass("fa-heart-o");
+                $(this).toggleClass("fa-heart");
+        });
+            //댓글 버튼
+        $(".contentsWrap .commentBtn").click(function() {
+            var selectedCommentTag = $(this).parent().parent().find(".commentTxtInputWrap");
+            selectedCommentTag.slideToggle(200);
+            selectedCommentTag.children(".commentTxtInput").children(".commentBox").focus();
+        });
+
+        $(".commentSendBtn").click(function() {
+            var commentInputTag = $(this).parent().parent().children(".commentTxtInput").children("input");
+
+            var comment = commentInputTag.val();
+            commentInputTag.val("");
+
+            var date = new Date();
+            var curYear = date.getFullYear();
+            var curMonth = date.getMonth() - 1;
+            var curDate = date.getDate();
+
+            var dateTxt = curYear + "년 " 
+                        + curMonth + "월 " 
+                        + curDate + "일";
+            var addTag 
+                = "<div class=\"contentsComment\">\n"
+                + "<div class=\"commentImgWrap\">\n"
+                + "<div class=\"commentImg\">\n"
+                + "</div>\n</div>\n"
+                + "<div class=\"commentTxtBlank\"></div>\n"
+                + "<div class=\"commentTxtWrap\">\n"
+                + "<div class=\"commentTxt\">" + comment 
+                + "<div class=\"commentDate\">" + dateTxt
+                + "</div>\n</div>\n</div>\n</div>";
+
+            $(this).parent().parent().parent().children(".contentsCommentWrap").append(addTag);
+        });
+        
+        </script>
+</body>
+
+</html>
