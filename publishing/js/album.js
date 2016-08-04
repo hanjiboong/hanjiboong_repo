@@ -1,7 +1,8 @@
 //albumContents 자바스크립트
 
-//스크롤시 뒤로 버튼 생성 제거
+
 $(document).ready(function () {
+    //스크롤시 뒤로 버튼 생성 제거
     $(document).scroll(function() {
         var btn = $("#albumSubNav");
         var position = $(window).scrollTop();
