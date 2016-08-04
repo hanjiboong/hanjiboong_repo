@@ -65,21 +65,21 @@
 }
 .albumImg01{
 	height: 280px;
-	background: url("../imgs/albumimg001.jpg") center;
+	background: url("../imgs/album/albumimg001.jpg") center;
 }
 .albumImg02{
 	height: 280px;
-	background: url("../imgs/albumimg002.png") 80% center;
+	background: url("../imgs/album/albumimg002.png") 80% center;
 	background-size: 100%;
 }
 .albumImg03{
 	height: 280px;
-	background: url("../imgs/albumimg003.jpg") center;
+	background: url("../imgs/album/albumimg003.jpg") center;
 	background-size: 100%;
 }
 .albumImg04{
 	height: 280px;
-	background: url("../imgs/albumimg004.jpg") center;
+	background: url("../imgs/album/albumimg004.jpg") center;
 	background-size: 100%;
 }
 .albumImgCover{
