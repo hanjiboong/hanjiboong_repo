@@ -39,21 +39,23 @@
         <div id="albumContent">
             <!--컨텐츠 박스 시작-->
             <div class="albumBox">
-                <div class="albumImg01">
-                    <div class="albumImgCover">
+                <a href="albumContents.html">
+                    <div class="albumImg01">
+                        <div class="albumImgCover">
+                        </div>
                     </div>
-                </div>
-                <div class="albumTxt">
-                    <div class="titleTxt">
-                        가족 여름휴가
+                    <div class="albumTxt">
+                        <div class="titleTxt">
+                            가족 여름휴가
+                        </div>
+                        <div class="hyphen">
+                            ㅡ
+                        </div>
+                        <div class="dateTxt">
+                            2016년 7월 20일(화)
+                        </div>
                     </div>
-                    <div class="hyphen">
-                        ㅡ
-                    </div>
-                    <div class="dateTxt">
-                        2016년 7월 20일(화)
-                    </div>
-                </div>
+                </a>
             </div>
             <!--컨텐츠 박스 끝-->
             <!--컨텐츠 박스 시작-->
@@ -176,11 +178,10 @@
         $("#albumTapMenu .albumVarticalTable").removeClass("tapOn");
         $(this).addClass("tapOn");
 
-        if($(this).hasClass("albumTapLeft")) {
+        if ($(this).hasClass("albumTapLeft")) {
             $("#albumAllView").hide();
             $("#albumContent").show();
-        }
-        else {
+        } else {
             $("#albumContent").hide();
             $("#albumAllView").show();
         }

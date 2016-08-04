@@ -66,6 +66,7 @@
 .albumContentsImgBox {
     height: 280px;
     background: url("../imgs/album/albumimg001.jpg") fixed;
+    background-size: 100%;
     z-index: 1;
 }
 
