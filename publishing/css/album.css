@@ -4,14 +4,6 @@
     margin: 0 auto;
 }
 
-#bar {
-	width: 100%;
-    height: 46px;
-    background-color: #f47564;
-    position: fixed;
-    top: 0;
-    z-index: 997;
-}
 
 #albumTapMenu {
     width: 750px;
@@ -155,10 +147,6 @@
 	margin-top: 96px;
     width: 750px;
     display: none;
-}
-
-.row div {
-    border: solid 1px #fff;
 }
 
 .albumImgPanel {
