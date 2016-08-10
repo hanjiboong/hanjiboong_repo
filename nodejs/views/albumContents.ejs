@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/nomalize.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link href="/css/common.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/albumContents.css">
+    <script src="https://use.fontawesome.com/beffbe80a6.js"></script>
+    <script type="text/javascript" src="/js/jquery-1.12.3.js"></script>
+    <script type="text/javascript" src="/js/common.js"></script>
+    <script src="/js/album.js"></script>
+    <style>
+    @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+    body {
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+    </style>
+</head>
+
+<body>
+
+<%- include("fragment/header") %>
+
+    <div id="albumContentsWrap">
+        <div class="navWrap">
+            <!-- <nav class="navbar navbar-fixed-top top-menu">
+                <div class="hanjiboong-container">
+                    <div class="row">
+                        <div class="col-xs-2">
+                            <a href="#timeline"><img src="imgs/menu_icon/timeline.png" /></a>
+                        </div>
+                        <div class="col-xs-2 top-menu-active">
+                            <a href="#album"><img src="imgs/menu_icon/album.png" /></a>
+                        </div>
+                        <div class="col-xs-2">
+                            <a href="#chat"><img src="imgs/menu_icon/chat.png" /></a>
+                        </div>
+                        <div class="col-xs-2">
+                            <a href="#calendar"><img src="imgs/menu_icon/calendar.png" /></a>
+                        </div>
+                        <div class="col-xs-2">
+                            <a href="#alert"><img src="imgs/menu_icon/alert.png" /></a>
+                        </div>
+                        <div class="col-xs-2">
+                            <a href="#settings"><img src="imgs/menu_icon/settings.png" /></a>
+                        </div>
+                    </div>
+                </div>
+            </nav> -->
+        </div>
+        <div id="albumSubNav">
+            <div class="albumSubNavWarp">
+                <div class="backBtnNav">
+                    <a href="album.html" class="fa fa-chevron-left">
+                        <strong>뒤로</strong>
+                    </a>
+                </div>
+                <div class="pluseBtnNav">
+                    <a href="javascript:" class="fa fa-plus"></a>
+                </div>
+            </div>
+        </div>
+        <div id="albumTop">
+            <div class="albumContentsImgBox">
+                <div class="albumImgCover">
+                </div>
+            </div>
+            <div class="backBtn">
+                <a href="album.html" class="fa fa-chevron-left">
+                    <strong>뒤로</strong>
+                </a>
+            </div>
+            <div class="pluseBtn">
+                <a href="javascript:" class="fa fa-plus"></a>
+            </div>
+            <div class="albumContentsTxtBox">
+                <div class="contentsTitleTxt">
+                    가족 여름휴가</br>
+                    <span class="hyphen">_</span></br>
+                    <span class="dateTxt">2016년 7월 20일(화)</span>
+                </div>
+            </div>
+        </div>
+        <div id="albumContents">
+            <div class="contentsWrap">
+                <div class="contentsImg">
+                    <img src="imgs/album/albumContentsImg01.jpg">
+                </div>
+                <div class="contentsIcon">
+                    <a href="javascript:" class="fa fa-heart-o" id="albumHeart"> </a>
+                    <a href="javascript:" class="fa fa-comment commentBtn"></a>
+                    <a href="javascript:" class="fa fa-share"></a>
+                </div>
+                <div class="commentTxtInputWrap">
+                    <div class="commentTxtInput">
+                        <input type="text" name="commentBox" class="commentBox" />
+                    </div>
+                    <div class="commentTxtBtn">
+                        <button class="commentSendBtn">전송</button>
+                    </div>
+                </div>
+                <div class="contentsCommentWrap">
+                </div>
+                <!-- /.contentsCommentWrap -->
+            </div>
+            <div class="contentsWrap">
+                <div class="contentsImg">
+                    <img src="imgs/album/albumContentsImg02.jpg">
+                </div>
+                <div class="contentsIcon">
+                    <a href="javascript:" class="fa fa-heart-o" id="albumHeart"> </a>
+                    <a href="javascript:" class="fa fa-comment commentBtn"></a>
+                    <a href="javascript:" class="fa fa-share"></a>
+                </div>
+                <div class="commentTxtInputWrap">
+                    <div class="commentTxtInput">
+                        <input type="text" name="commentBox" class="commentBox" />
+                    </div>
+                    <div class="commentTxtBtn">
+                        <button class="commentSendBtn">전송</button>
+                    </div>
+                </div>
+                <div class="contentsCommentWrap">
+                </div>
+                <!-- /.contentsCommentWrap -->
+            </div>
+        </div>
+        <div class="otherContents">
+            <div class="otherContentsTitle">
+                스토리 더보기
+            </div>
+            <div class="otherContentsImg">
+                <div class="imgCover">
+                </div>
+            </div>
+            <div class="otherContentsTxt">
+                <div class="otherTitleTxt">
+                    <div class="contentsTitleTxt">
+                        <span class="dateTxt">2016년 7월 8일(목)</span></br>
+                        엄마아빠 사랑해요
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

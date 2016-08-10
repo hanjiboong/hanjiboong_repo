@@ -30,15 +30,27 @@ app.use(express.static(path.join(__dirname, 'public')));
 //app.use('/', routes);
 //app.use('/users', users);
 
-/* ********** »ç¿ëÀÚ Á¤ÀÇ ½ÃÀÛ ********** */
+/* ********** start - ì‚¬ìš©ì ì •ì˜ í•¨ìˆ˜ ********** */
 
-/* index ÆäÀÌÁö ¼³Á¤ */
+/* index  */
 app.get("/", function(req, res){
   //res.end("ok");
   res.render("index"); 
 });
 
-/* ********** »ç¿ëÀÚ Á¤ÀÇ ³¡ ********** */
+app.get("/timeline", function(req, res) {
+  res.render("timeline");
+});
+
+app.get("/album", function(req, res) {
+  res.render("album");
+});
+
+app.get("/calendar", function(req, res) {
+  res.render("calendar");
+});
+
+/* ********** end - ì‚¬ìš©ì ì •ì˜ í•¨ìˆ˜ ********** */
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
