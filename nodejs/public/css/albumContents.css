@@ -65,7 +65,8 @@
 
 .albumContentsImgBox {
     height: 280px;
-    background: url("../imgs/albumimg001.jpg") fixed;
+    background: url("../imgs/album/albumimg001.jpg") fixed;
+    background-size: 100%;
     z-index: 1;
 }
 
@@ -229,7 +230,7 @@
     height: 200px;
     margin: 7px auto 0;
     text-align: center;
-    background: url("../imgs/albumimg002.png") 80% center;
+    background: url("../imgs/album/albumimg002.png") 80% center;
     background-size: 100%;
 }
 

@@ -1,148 +1,177 @@
 @charset "utf-8";
+#albumWarp {
+    width: 750px;
+    margin: 0 auto;
+}
 
-#albumWarp{
-	width: 750px;
-	margin: 0 auto;
+
+#albumTapMenu {
+    width: 750px;
+    height: 50px;
+    z-index: 998;
+    overflow: auto;
+    position: fixed;
+    top: 46px;
+    background-color: #fff;
 }
-#bar{
-	height: 46px;
-	background-color: #f47564;
+
+
+.albumTapLeft {
+    width: 50%;
+    height: 50px;
+    text-align: center;
+    float: left;
+    border-bottom: 3px solid #fff;
 }
-#albumTapMenu{
-	width: 750px;
-	height: 50px;
-	overflow: auto;
+
+.albumTapRight {
+    width: 50%;
+    height: 50px;
+    text-align: center;
+    float: right;
+    border-bottom: 3px solid #fff;
 }
-.albumTapLeft{
-	width: 50%;
-	height: 50px;
-	text-align: center;
-	float: left;
-	border-bottom: 3px solid #fff;
+
+.albumTapLeft a {
+    font-size: 16px;
+    text-decoration: none;
 }
-.albumTapRight{
-	width: 50%;
-	height: 50px;
-	text-align: center;
-	float: right;
-	border-bottom: 3px solid #fff;
+
+.albumTapRight a {
+    font-size: 16px;
+    text-decoration: none;
 }
-.albumTapLeft a{
-	font-size: 16px;
-	text-decoration: none;
-}
-.albumTapRight a{
-	font-size: 16px;
-	text-decoration: none;
-}
+
 .albumVarticalTable {
-	display: table;
-	overflow: hidden;
-}
-.albumVarticalCell{
-	margin: 0 auto;
-	display: table-cell;
-	vertical-align: middle ;
-}
-.albumVarticalCell a{
-	color: #fcc;
-}
-.tapOn {
-	cursor: pointer;
-	border-bottom: 3px solid #e25f56;
+    display: table;
+    overflow: hidden;
 }
 
-.tapOn > .albumVarticalCell > a{
-	color: #e25f56;;
+.albumVarticalCell {
+    margin: 0 auto;
+    display: table-cell;
+    vertical-align: middle;
 }
+
+.albumVarticalCell a {
+    color: #fcc;
+}
+
+.tapOn {
+    cursor: pointer;
+    border-bottom: 3px solid #e25f56;
+}
+
+.tapOn > .albumVarticalCell > a {
+    color: #e25f56;
+    ;
+}
+
 
 /* 이미지 시작 */
-.albumBox{
-	height: 280px;
-	position: relative;
-	cursor: pointer;
-	border-top: solid 2px #fff;
+
+#albumContent {
+	margin-top: 96px;
 }
-.albumImg01{
-	height: 280px;
-	background: url("../imgs/albumimg001.jpg") center;
+
+.albumBox {
+    height: 280px;
+    position: relative;
+    cursor: pointer;
+    border-top: solid 2px #fff;
 }
-.albumImg02{
-	height: 280px;
-	background: url("../imgs/albumimg002.png") 80% center;
-	background-size: 100%;
+
+.albumImg01 {
+    height: 280px;
+    background: url("../imgs/album/albumimg001.jpg") center;
 }
-.albumImg03{
-	height: 280px;
-	background: url("../imgs/albumimg003.jpg") center;
-	background-size: 100%;
+
+.albumImg02 {
+    height: 280px;
+    background: url("../imgs/album/albumimg002.png") 80% center;
+    background-size: 100%;
 }
-.albumImg04{
-	height: 280px;
-	background: url("../imgs/albumimg004.jpg") center;
-	background-size: 100%;
+
+.albumImg03 {
+    height: 280px;
+    background: url("../imgs/album/albumimg003.jpg") center;
+    background-size: 100%;
 }
-.albumImgCover{
-	height: 280px;
-	background-color: #333;
-	opacity: 0.4;
-	-webkit-transition: all 0.2s ease-out;
-			transition: all 0.2s ease-out;
+
+.albumImg04 {
+    height: 280px;
+    background: url("../imgs/album/albumimg004.jpg") center;
+    background-size: 100%;
 }
-.albumImgCover:hover{
-	opacity: 0.6;
+
+.albumImgCover {
+    height: 280px;
+    background-color: #333;
+    opacity: 0.4;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
 }
-.albumTxt{
-	position: absolute;
-	top: 30px;
-	left: 30px;
+
+.albumImgCover:hover {
+    opacity: 0.6;
 }
-.titleTxt{
-	font-size: 32px;
-	letter-spacing: -2px;
-	color: #fff;
+
+.albumTxt {
+    position: absolute;
+    top: 30px;
+    left: 30px;
 }
-.hyphen{
-	color: #fff;
-	font-size: 25px;
+
+.titleTxt {
+    font-size: 32px;
+    letter-spacing: -2px;
+    color: #fff;
 }
-.dateTxt{
-	color: #fff;
-	font-size: 12px;
-	position: absolute;
-	top: 70px;
+
+.hyphen {
+    color: #fff;
+    font-size: 25px;
 }
+
+.dateTxt {
+    color: #fff;
+    font-size: 12px;
+    position: absolute;
+    top: 70px;
+}
+
 
 /*폴더 메뉴 시작*/
-#albumAllView{
-	width: 750px;
-	display: none;
-}
-.row div{
-	border: solid 1px #fff;
+
+#albumAllView {
+	margin-top: 96px;
+    width: 750px;
+    display: none;
 }
 
-.albumImgPanel{
-	width: 100%;
-	height: 220px;
+.albumImgPanel {
+    width: 100%;
+    height: 220px;
 }
-.container-fluid{
-	margin-left: 0;
-	margin-right: 0;
+
+.container-fluid {
+    margin-left: 0;
+    margin-right: 0;
 }
-.col-xs-4{
-	padding-left: 0;
-	padding-right: 0;
+
+.col-xs-4 {
+    padding-left: 0;
+    padding-right: 0;
 }
-@media(max-width: 749px){
-        #albumWarp,#albumContent,#albumTapMenu,#albumAllView {
-            width: 100%;
-        }
-        .albumImgPanel{
-        	height: 138px;
-        }
+
+@media(max-width: 749px) {
+    #albumWarp,
+    #albumContent,
+    #albumTapMenu,
+    #albumAllView {
+        width: 100%;
     }
-
-
-
-
+    .albumImgPanel {
+        height: 138px;
+    }
+}

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ko-kr">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title>한지붕-캘린더</title>
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link href="css/nomalize.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/font-awesome.css" rel="stylesheet">
+<link href="css/common.css" rel="stylesheet">
+<link href="css/calendar.css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery-1.12.3.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/calendar.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-fixed-top top-menu">
+	<div class="hanjiboong-container">
+		<div class="row">
+			<div class="col-xs-2 top-menu-active"><a href="#timeline"><img src="imgs/menu_icon/timeline.png" /></a></div>
+			<div class="col-xs-2"><a href="#album"><img src="imgs/menu_icon/album.png" /></a></div>
+			<div class="col-xs-2"><a href="#chat"><img src="imgs/menu_icon/chat.png" /></a></div>
+			<div class="col-xs-2"><a href="#calendar"><img src="imgs/menu_icon/calendar.png" /></a></div>
+			<div class="col-xs-2"><a href="#alert"><img src="imgs/menu_icon/alert.png" /></a></div>
+			<div class="col-xs-2"><a href="#settings"><img src="imgs/menu_icon/settings.png" /></a></div>
+		</div>
+	</div>	
+</nav>
+
+<div id="hanjoboong-calendar-box" class="hanjiboong-container"></div>
+
+<div class="datebox">
+	<div class="col-xs-4 dayLeft"><span class="num">2</span></br><span>DAY</span></div>
+	<div class="col-xs-4 week"><span class="num">3</span></br><span>WEEK</span></div>
+	<div class="col-xs-4 monthRight"><span class="num">6</span></br><span>MONTH</span></div>
+</div>
+<div class="photo">
+	<div class="col-xs-6">
+		<img class="img-responsive img-rounded" src="imgs/imageOne.jpg" alt="">
+	</div>
+	<div class="col-xs-6">
+		<img class="img-responsive img-rounded" src="imgs/imageTwo.jpg" alt="">
+	</div>
+</div>
+
+</body>
+</html>
