@@ -1,0 +1,177 @@
+@charset "utf-8";
+#albumWarp {
+    width: 750px;
+    margin: 0 auto;
+}
+
+
+#albumTapMenu {
+    width: 750px;
+    height: 50px;
+    z-index: 998;
+    overflow: auto;
+    position: fixed;
+    top: 46px;
+    background-color: #fff;
+}
+
+
+.albumTapLeft {
+    width: 50%;
+    height: 50px;
+    text-align: center;
+    float: left;
+    border-bottom: 3px solid #dddfe2;
+}
+
+.albumTapRight {
+    width: 50%;
+    height: 50px;
+    text-align: center;
+    float: right;
+    border-bottom: 3px solid #dddfe2;
+}
+
+.albumTapLeft a {
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.albumTapRight a {
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.albumVarticalTable {
+    display: table;
+    overflow: hidden;
+}
+
+.albumVarticalCell {
+    margin: 0 auto;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.albumVarticalCell a {
+    color: #fcc;
+}
+
+.tapOn {
+    cursor: pointer;
+    border-bottom: 3px solid #e25f56;
+}
+
+.tapOn > .albumVarticalCell > a {
+    color: #e25f56;
+    ;
+}
+
+
+/* 이미지 시작 */
+
+#albumContent {
+	margin-top: 96px;
+}
+
+.albumBox {
+    height: 280px;
+    position: relative;
+    cursor: pointer;
+    border-top: solid 2px #dddfe2;
+}
+
+.albumImg01 {
+    height: 280px;
+    background: url("../imgs/album/albumimg001.jpg") center;
+}
+
+.albumImg02 {
+    height: 280px;
+    background: url("../imgs/album/albumimg002.png") 80% center;
+    background-size: 100%;
+}
+
+.albumImg03 {
+    height: 280px;
+    background: url("../imgs/album/albumimg003.jpg") center;
+    background-size: 100%;
+}
+
+.albumImg04 {
+    height: 280px;
+    background: url("../imgs/album/albumimg004.jpg") center;
+    background-size: 100%;
+}
+
+.albumImgCover {
+    height: 280px;
+    background-color: #333;
+    opacity: 0.4;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+.albumImgCover:hover {
+    opacity: 0.6;
+}
+
+.albumTxt {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.titleTxt {
+    font-size: 32px;
+    letter-spacing: -2px;
+    color: #fff;
+}
+
+.hyphen {
+    color: #fff;
+    font-size: 25px;
+}
+
+.dateTxt {
+    color: #fff;
+    font-size: 12px;
+    position: absolute;
+    top: 70px;
+}
+
+
+/*폴더 메뉴 시작*/
+
+#albumAllView {
+	margin-top: 96px;
+    width: 750px;
+    display: none;
+}
+
+.albumImgPanel {
+    width: 100%;
+    height: 220px;
+}
+
+.container-fluid {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.col-xs-4 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+@media(max-width: 749px) {
+    #albumWarp,
+    #albumContent,
+    #albumTapMenu,
+    #albumAllView {
+        width: 100%;
+    }
+    .albumImgPanel {
+        height: 138px;
+    }
+}
