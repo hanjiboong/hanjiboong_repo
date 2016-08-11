@@ -46,6 +46,10 @@ app.get("/album", function(req, res) {
   res.render("album");
 });
 
+app.get("/albumContents", function(req, res) {
+  res.render("albumContents");
+});
+
 app.get("/calendar", function(req, res) {
   res.render("calendar");
 });
