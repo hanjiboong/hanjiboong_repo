@@ -21,7 +21,7 @@
     height: 50px;
     text-align: center;
     float: left;
-    border-bottom: 3px solid #fff;
+    border-bottom: 3px solid #dddfe2;
 }
 
 .albumTapRight {
@@ -29,7 +29,7 @@
     height: 50px;
     text-align: center;
     float: right;
-    border-bottom: 3px solid #fff;
+    border-bottom: 3px solid #dddfe2;
 }
 
 .albumTapLeft a {
@@ -78,7 +78,7 @@
     height: 280px;
     position: relative;
     cursor: pointer;
-    border-top: solid 2px #fff;
+    border-top: solid 2px #dddfe2;
 }
 
 .albumImg01 {
