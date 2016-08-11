@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>프로필</title>
+	<link type="text/css" rel="stylesheet" href="/css/nomalize.css">
+	<link type="text/css" rel="stylesheet" href="/css/bootstrap.min.css" >
+    <link type="text/css" rel="stylesheet" href="/css/common.css" >
+    <link type="text/css" rel="stylesheet" href="/css/profile.css" />
+    <script type="text/javascript" src="/js/jquery-1.12.3.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/profile.js"></script>
+</head>
+<body>
+
+<%- include("fragment/header") %>
+
+<div id="profile_container">
+	<div id="profile_contents">	
+		<div id="prf_img_box">
+			<img src="/imgs/profile/rope.jpg" width="750px" alt="">
+			<div class="prf_center_text">
+				<p><a href="">탭하여 커버사진을 추가해주세요.</a></p>
+				<span class="glyphicon glyphicon-pencil"></span>
+			</div>
+		</div>
+		<div class="circle_img">	
+			<div class="circle_img_box">
+				<p><a href="">바꾸기</a></p>
+			</div>
+		</div>
+
+
+		<div class="prf_title">
+			<p class="title_left">이름</p>
+			<p class="title_right">3/10 글자</p>
+		</div>
+
+		<div class="prf_box">
+			<p class="box_left_text">김개똥</p>
+		</div>
+
+		<div class="prf_box">
+			<p class="box_left_text">생일</p>
+			<p class="box_right_text">1992.11.30</p>
+		</div>
+
+		<div class="prf_box">
+			<p class="box_left_text">가족 구성원</p>
+			<p class="box_right_text">
+				<select class="form-control input-lg">
+				  <option>아빠</option>
+				  <option>엄마</option>
+				  <option>아들</option>
+				  <option>딸</option>
+				  <option>기타</option>
+				</select>
+			</p>
+		</div>
+
+		<div class="prf_title">
+			<p class="title_left">내 계정 정보</p>
+		</div>
+		
+		<div class="prf_box">
+			<p class="box_left_text">aaa@naver.com</p>
+		</div>
+		
+		<div class="button_pwd">
+			<p><a href=>비밀번호 변경하기</a></p>
+		</div>
+
+		<div class="button_pwd">
+			<p>탈퇴하기</p>
+		</div>
+	</div><!-- // profile_contents -->
+</div><!-- // profile_container -->
+
+</body>
+</html>
