@@ -14,6 +14,7 @@
     <script src="/js/jquery-1.12.3.js"></script>
     <script src="/js/imgLiquid-min.js"></script>
     <script type="text/javascript" src="/js/common.js"></script>
+    <script src="/js/album.js"></script>
     <style>
     @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
     body {
@@ -27,32 +28,6 @@
 <%- include("fragment/header") %>
 
     <div id="albumWarp">
-        <div class="navWrap">
-            <!-- <nav class="navbar navbar-fixed-top top-menu">
-                <div class="hanjiboong-container">
-                    <div class="row">
-                        <div class="col-xs-2">
-                            <a href="#timeline"><img src="imgs/menu_icon/timeline.png" /></a>
-                        </div>
-                        <div class="col-xs-2 top-menu-active">
-                            <a href="#album"><img src="imgs/menu_icon/album.png" /></a>
-                        </div>
-                        <div class="col-xs-2">
-                            <a href="#chat"><img src="imgs/menu_icon/chat.png" /></a>
-                        </div>
-                        <div class="col-xs-2">
-                            <a href="#calendar"><img src="imgs/menu_icon/calendar.png" /></a>
-                        </div>
-                        <div class="col-xs-2">
-                            <a href="#alert"><img src="imgs/menu_icon/alert.png" /></a>
-                        </div>
-                        <div class="col-xs-2">
-                            <a href="#settings"><img src="imgs/menu_icon/settings.png" /></a>
-                        </div>
-                    </div>
-                </div>
-            </nav> -->
-        </div>
         <!-- 탭메뉴 시작 -->
         <div id="albumTapMenu">
             <div class="albumVarticalTable albumTapLeft tapOn">
@@ -71,7 +46,7 @@
         <div id="albumContent">
             <!--컨텐츠 박스 시작-->
             <div class="albumBox">
-                <a href="albumContents.html">
+                <a href="albumContents.ejs">
                     <div class="albumImg01">
                         <div class="albumImgCover">
                         </div>
@@ -202,28 +177,6 @@
         </div>
         <!--전체보기 박스 끝-->
     </div>
-    <script>
-    $(".top-menu .hanjiboong-container .row .col-xs-2:nth-child(2)").addClass("top-menu-active");
-    
-
-    $(".albumImgPanel").imgLiquid();
-
-    $("#albumTapMenu .albumVarticalTable").click(function() {
-        // $(this).parent().find(".albumVarticalTable").removeClass("tapOn");
-        $("#albumTapMenu .albumVarticalTable").removeClass("tapOn");
-        $(this).addClass("tapOn");
-
-        if ($(this).hasClass("albumTapLeft")) {
-            $("#albumAllView").hide();
-            $("#albumContent").show();
-        } else {
-            $("#albumContent").hide();
-            $("#albumAllView").show();
-        }
-    });
-
-
-    </script>
 </body>
 
 </html>

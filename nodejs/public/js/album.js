@@ -5,6 +5,22 @@ $(document).ready(function () {
     $(".top-menu .hanjiboong-container .row .col-xs-2:nth-child(2)").addClass("top-menu-active");
     
 
+    $(".albumImgPanel").imgLiquid();
+
+    $("#albumTapMenu .albumVarticalTable").click(function() {
+        // $(this).parent().find(".albumVarticalTable").removeClass("tapOn");
+        $("#albumTapMenu .albumVarticalTable").removeClass("tapOn");
+        $(this).addClass("tapOn");
+
+        if ($(this).hasClass("albumTapLeft")) {
+            $("#albumAllView").hide();
+            $("#albumContent").show();
+        } else {
+            $("#albumContent").hide();
+            $("#albumAllView").show();
+        }
+    });
+
     //스크롤시 뒤로 버튼 생성 제거
     $(document).scroll(function() {
         var btn = $("#albumSubNav");
