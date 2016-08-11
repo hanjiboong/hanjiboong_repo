@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>알림 설정</title>
+	<link type="text/css" rel="stylesheet" href="/css/nomalize.css">
+	<link type="text/css" rel="stylesheet" href="/css/bootstrap.min.css" >
+    <link type="text/css" rel="stylesheet" href="/css/common.css" >
+    <link type="text/css" rel="stylesheet" href="/css/setting_notice.css" />
+    <script type="text/javascript" src="/js/jquery-1.12.3.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/setting.js"></script>
+</head>
+<body>
+
+<%- include("fragment/header") %>
+
+<div id="setting_ntc_container">
+	<div id="setting_ntc_contents">
+		<div class="push">
+			<div class="push_box">
+				<div class="push_title">
+					<p>푸시 알림</p>
+					<div class="push_button">
+						<p>ON</p>
+					</div>
+				</div>
+				
+
+				<div class="push_text">
+					<p>푸시 알림 설정은 아이폰 설정 > 알림 > 한지붕 에서 바꾸실 수 있습니다.</p>
+				</div>
+			</div>
+			<div class="push_box">
+				<div class="push_title">
+					<p>푸시 알림 미리보기</p>
+					<div class="push_button">
+						<p>OFF</p>
+					</div>
+				</div>
+				<div class="push_text">
+					<p>푸시 알림이 왔을 때 메시지 내용을 보여줍니다.<br/>
+					미리보기를 끄면 메시지 내용이 노출되지 않습니다.</p>
+				</div>
+			</div>
+		</div><!-- //push -->
+
+		<div class="push">
+			<div class="push_box">
+				<div class="push_title">
+					<p>소리 알림</p>
+					<div class="push_button">
+						<p>ON</p>
+					</div>
+				</div>
+				<div class="push_text">
+					<p>한지풍 실행 중 새로운 푸시가 왔을 때 소리를 통해서 알려줍니다.</p>
+				</div>
+			</div>
+		</div><!-- //push -->
+
+		<div class="push">
+			<div class="push_box">
+				<div class="push_title">
+					<p>진동 알림</p>
+					<div class="push_button">
+						<p>ON</p>
+					</div>
+				</div>
+				<div class="push_text">
+					<p>한지붕 실행 중 새로운 푸시가 왔을 때 진동을 통해서 알려줍니다.</p>
+				</div>
+			</div>
+		</div><!-- //push -->
+
+		<div class="push">
+			<div class="push_box">
+				<div class="push_title">
+					<p>잠금 설정</p>
+					<div class="push_button">
+						<p>ON</p>
+					</div>
+				</div>
+				<div class="push_text">
+					<p>채팅 알림에 답장하기 전 잠금번호 입력하기</p>
+				</div>
+			</div>
+		</div><!-- //push -->
+
+
+	</div><!-- //setting_ntc_contents -->
+</div><!-- //setting_ntc_container -->
+
+</body>
+</html>

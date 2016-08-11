@@ -54,6 +54,20 @@ app.get("/calendar", function(req, res) {
   res.render("calendar");
 });
 
+app.get("/notice", function(req, res) {
+  res.render("notice");
+});
+
+app.get("/setting", function(req, res) {
+  res.render("setting_notice");
+});
+
+app.get("/profile", function(req, res) {
+  res.render("profile");
+});
+
+
+
 /* ********** end - 사용자 정의 함수 ********** */
 
 // catch 404 and forward to error handler
