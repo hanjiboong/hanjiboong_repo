@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <mga charset="UTF-8">
+    <title>hanjiboong_chat</title>
+
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/nomalize.css">
+    <link rel="stylesheet" href="css/chat.css">
+
+    <!-- font awsome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+</head>
+<body>
+   <div class="nav">
+      <a href="#"><img src="imgs/menu_icon/timeline.png" alt=""></a>
+      <a href="#"><img src="imgs/menu_icon/album.png" alt=""></a>
+      <a href="#"><img src="imgs/menu_icon/chat.png" alt=""></a>
+      <a href="#"><img src="imgs/menu_icon/calendar.png" alt=""></a>
+      <a href="#"><img src="imgs/menu_icon/alert.png" alt=""></a>
+      <a href="#"><img src="imgs/menu_icon/settings.png" alt=""></a>
+   </div>
+   <div class="chat_bg">
+      <span id="nowDate" class="chat_notice"></span>
+      <div class="chat_get">
+          <div class="chat_form">
+              <div class="chat_profile"></div>
+              <div class="chat_name">박준호</div>
+              <span class="chat_msg">채팅 시작</span>
+              <span class="chat_date">오후 2시 22분</span>
+          </div>
+          <!--<div class="chat_form2 clearfix">
+              <div class="chat_form_my">
+                  <span class="chat_date2">오후 4시 44분</span>
+                  <span class="chat_msg2">안오면 핵꿀밤</span>
+              </div>
+         </div>-->
+      </div>
+   </div>
+   <div class="chat_panel">
+       <div class="chat_panel_add fa fa-paperclip" aria-hidden="true"></div>
+       <div class="chat_panel_form"><input id="msg" type="text" class="chat_panel_input"/></div>
+       <div id="sendBtn" class="chat_btn_send">보내기</div>
+   </div>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <!-- (1) socket.io 클라이언트 자바스크립트 로딩 -->
+    <script src="/js/socket.io.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/chat.js"></script>
+
+    <script>
+
+
+
+    </script>
+
+</body>
+</html>

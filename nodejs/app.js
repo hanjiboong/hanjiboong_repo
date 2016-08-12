@@ -4,6 +4,9 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+//var http = require('http');
+var socket_io = require('socket.io');
+
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
@@ -30,12 +33,44 @@ app.use(express.static(path.join(__dirname, 'public')));
 //app.use('/', routes);
 //app.use('/users', users);
 
+
+/* *********** 사용자 정의 변수 ********** */
+
+var LISTEN_PORT = 8080;
+
+var chatMembers = [];
+var chatLog = [];
+
+
+/* *********** socket.io ********** */
+
+
+var io = socket_io();
+app.io = io;
+
+io.sockets.on("connection",function(socket){
+    console.log('User\'s chatting connected!');
+    socket.on("sendMessage",function(data){
+        chatLog.push({
+          id:data.id,
+          msg:data.msg
+        });
+        // 맨 뒤 id
+        data.lastMsgId = chatLog.slice(-1)[0]["id"];
+        // 뒤에서 두번째 id
+        data.lastSecondMsgId = chatLog.slice(-2)[0]["id"];
+        // (6) 받은 문자열을 모든 클라이언트에게 getMessage 이벤트를 발생시키면서 전송한다.
+        io.sockets.emit("getMessage",data);
+    });
+})//io.socket.on
+
+
 /* ********** start - 사용자 정의 함수 ********** */
 
 /* index  */
 app.get("/", function(req, res){
   //res.end("ok");
-  res.render("index"); 
+  res.render("index");
 });
 
 app.get("/timeline", function(req, res) {
@@ -64,6 +99,11 @@ app.get("/setting", function(req, res) {
 
 app.get("/profile", function(req, res) {
   res.render("profile");
+});
+
+/* chatting  */
+app.get('/chat', function (req, res) {
+  res.sendfile(__dirname + '/views/chat.html');
 });
 
 
