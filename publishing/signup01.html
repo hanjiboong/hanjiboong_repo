@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>signup.html</title>
+	<link rel="stylesheet" href="css/bootstrap.css" />
+	<link rel="stylesheet" href="css/signupcss.css" />
+	<script src="js/angular.min.js"></script>
+</head>
+<body>
+
+<!-- 컨텐츠 영역 -->
+<div class="hanjiboong-container">
+	<div class="signTop">
+		<div>
+			<img src="imgs/signimg.png"/>
+		</div>
+	</div>
+	<div class="signTab">
+		<ul>
+			<li class="col-xs-6 signSelected">
+			<a href="#signOne">회원가입</a>
+			</li>
+			<li class="col-xs-6">
+			<a href="#signTwo">로그인</a>
+			</li>
+		</ul>		
+	</div>
+	<!-- 탭 컨텐츠 -->	
+	<div class="signContent">
+		<div id="signOne">
+			<div class="signContent01">
+				<div class="signGroup">
+				<!--<span style="font-weight: bold">구성원</span><br>-->
+				<div class="btn-group" data-toggle="buttons">
+					<label class="btn btn-default btn-lg active">
+						<input name="color" type="radio" checked/>아빠
+					</label>
+					<label class="btn btn-default btn-lg">
+						<input name="color" type="radio">엄마
+					</label>
+					<label class="btn btn-default btn-lg">
+						<input name="color" type="radio">아들
+					</label>
+					<label class="btn btn-default btn-lg">
+						<input name="color" type="radio">딸
+					</label>
+				</div>				
+			</div>
+			<div class="signForm">
+				<form>
+					<fieldset>
+						<!-- <label>이메일</label> -->
+						<input type="text" name="useremail" placeholder="이메일"><br>
+
+						<!-- <label>비밀번호</label>-->
+						<input type="text" name="userpwd" placeholder="비밀번호(6자리이상)"><br>
+
+						<input type="text" name="userpwd" placeholder="비밀번호확인"><br>
+
+						<!-- <label>이름</label>-->
+						<input type="text" name="username" placeholder="이름"><br> 
+
+						<span style="color: #999">생년월일</span><br>
+						<select class="form-control col-sm-8">
+							<option>2016</option>
+							<option>2015</option>
+							<option>2014</option>
+							<option>2013</option>
+							<option>2012</option>
+							<option>2011</option>
+							<option>2010</option>
+							<option>2009</option>
+							<option>2008</option>
+							<option>2007</option>
+							<option>2006</option>
+							<option>2005</option>
+							<option>2004</option>
+							<option>2003</option>
+							<option>2002</option>
+							<option>2001</option>
+							<option>2000</option>
+							<option>1999</option>
+							<option>1998</option>
+							<option>1997</option>
+							<option>1996</option>
+							<option>1995</option>
+							<option>1994</option>
+							<option>1993</option>
+							<option>1992</option>
+							<option>1991</option>
+							<option>1990</option>
+							<option>1989</option>
+							<option>1988</option>
+							<option>1987</option>
+							<option>1986</option>
+							<option>1985</option>
+							<option>1984</option>
+							<option>1983</option>
+							<option>1982</option>
+							<option>1981</option>
+							<option>1980</option>
+						</select>
+						<select class="form-control col-sm-2">
+							<option>1월</option>
+							<option>2월</option>
+							<option>3월</option>
+							<option>4월</option>
+							<option>5월</option>
+							<option>6월</option>
+							<option>7월</option>
+							<option>8월</option>
+							<option>9월</option>
+							<option>10월</option>
+							<option>11월</option>
+							<option>12월</option>
+						</select>
+						<select class="form-control col-sm-2">
+							<option>1일</option>
+							<option>2일</option>
+							<option>3일</option>
+							<option>4일</option>
+						</select>
+					</fieldset>
+				</form>
+			</div>
+			</div>	
+			<div class="signBtn">
+				<a href="#">가입하기</a>
+			</div>
+		</div>
+		<div id="signTwo">
+			<div class="signContent01">
+				<div class="signForm">
+					<form>
+						<fieldset>
+							<input type="text" name="useremail" placeholder="이메일"><br>
+
+						<input type="text" name="userpwd" placeholder="비밀번호">
+						</fieldset>
+					</form>
+				</div>
+				<div class="signSearch">
+					<a href="">이메일</a>/
+					<a href="">비밀번호 찾기</a>
+				</div>
+			</div>
+			<div class="signBtn">
+				<a href="#">로그인</a>
+			</div>
+		</div>
+    </div>
+	
+
+</div>
+<script type="text/javascript" src="js/jquery-1.12.3.js"></script>
+<script>
+$(function(){
+	$("#signTwo").hide();
+
+
+	$(".signTab a").click(function(){
+      var index = $(this).attr("href");
+      $("#signOne, #signTwo").hide();
+      $(index).fadeIn();
+      $(".signTab li").removeClass("signSelected");
+      $(this).parent().addClass("signSelected");
+   })
+});
+	
+</script>	
+
+</body>
+</html>
+
+
+
+
